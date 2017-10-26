@@ -1,0 +1,139 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 287589,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Utils.before(Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "We will register a new user to the webshop application",
+        "description": "",
+        "id": "scenarios-based-on-registration;we-will-register-a-new-user-to-the-webshop-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12345724419,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I open the browser and access webshop",
+            "match": {
+              "location": "userRegistration.navigateToSalesforce()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2062184078,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on \"Register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Register",
+                  "offset": 12
+                }
+              ],
+              "location": "userRegistration.clickOnLink(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 486159413,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the \"Register\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Register",
+                  "offset": 13
+                }
+              ],
+              "location": "userRegistration.checkPageTitle(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 488076948,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I set the Gender field to \"Male\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Male",
+                  "offset": 27
+                }
+              ],
+              "location": "userRegistration.setRadioButton(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 622257185,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I fill the \"First name:\" field with \"Tamas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "First name:",
+                  "offset": 12
+                },
+                {
+                  "val": "Tamas",
+                  "offset": 37
+                }
+              ],
+              "location": "userRegistration.fillInputField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1016412274,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Close driver",
+            "match": {
+              "location": "userRegistration.closeBrowser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@BaseLine"
+          }
+        ]
+      }
+    ],
+    "name": "Scenarios based on registration",
+    "description": "",
+    "id": "scenarios-based-on-registration",
+    "keyword": "Feature",
+    "uri": "scenarios/A-BaseLine/01Leads.feature"
+  }
+]
